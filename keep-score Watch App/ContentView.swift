@@ -8,12 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("yourTeamScore") private var yourTeamScore = 0
+    @AppStorage("theirTeamScore") private var theirTeamScore = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 12) {
+            HStack {
+                VStack {
+                    Text("Your Team")
+                        .font(.caption)
+                    Text("\(yourTeamScore)")
+                        .font(.title)
+                    Button("➕") {
+                        yourTeamScore += 1
+                    }
+                }
+
+                Spacer()
+
+                VStack {
+                    Text("Their Team")
+                        .font(.caption)
+                    Text("\(theirTeamScore)")
+                        .font(.title)
+                    Button("➕") {
+                        theirTeamScore += 1
+                    }
+                }
+            }
+            .padding(.horizontal)
+
+            Button("Reset Scores") {
+                yourTeamScore = 0
+                theirTeamScore = 0
+            }
+            .foregroundColor(.red)
         }
         .padding()
     }

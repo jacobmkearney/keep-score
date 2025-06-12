@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFD25C5B2DFB27BF00C9BA08 /* keep-score Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AFD25C5A2DFB27BF00C9BA08 /* keep-score Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFD25C602DFB27BF00C9BA08 /* keep_scoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD25C5F2DFB27BF00C9BA08 /* keep_scoreApp.swift */; };
+		AFD25C622DFB27BF00C9BA08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD25C612DFB27BF00C9BA08 /* ContentView.swift */; };
+		AFD25C642DFB27C000C9BA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD25C632DFB27C000C9BA08 /* Assets.xcassets */; };
+		AFD25C672DFB27C000C9BA08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD25C662DFB27C000C9BA08 /* Preview Assets.xcassets */; };
+		AFD25C712DFB27C000C9BA08 /* keep_score_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD25C702DFB27C000C9BA08 /* keep_score_Watch_AppTests.swift */; };
+		AFD25C7B2DFB27C000C9BA08 /* keep_score_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD25C7A2DFB27C000C9BA08 /* keep_score_Watch_AppUITests.swift */; };
+		AFD25C7D2DFB27C000C9BA08 /* keep_score_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD25C7C2DFB27C000C9BA08 /* keep_score_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFD25C5C2DFB27BF00C9BA08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFD25C4E2DFB27BF00C9BA08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFD25C592DFB27BF00C9BA08;
+			remoteInfo = "keep-score Watch App";
+		};
+		AFD25C6D2DFB27C000C9BA08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFD25C4E2DFB27BF00C9BA08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFD25C592DFB27BF00C9BA08;
+			remoteInfo = "keep-score Watch App";
+		};
+		AFD25C772DFB27C000C9BA08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFD25C4E2DFB27BF00C9BA08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFD25C592DFB27BF00C9BA08;
+			remoteInfo = "keep-score Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFD25C832DFB27C000C9BA08 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AFD25C5B2DFB27BF00C9BA08 /* keep-score Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AFD25C542DFB27BF00C9BA08 /* keep-score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "keep-score.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD25C5A2DFB27BF00C9BA08 /* keep-score Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "keep-score Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD25C5F2DFB27BF00C9BA08 /* keep_scoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keep_scoreApp.swift; sourceTree = "<group>"; };
+		AFD25C612DFB27BF00C9BA08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFD25C632DFB27C000C9BA08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFD25C662DFB27C000C9BA08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFD25C6C2DFB27C000C9BA08 /* keep-score Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "keep-score Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD25C702DFB27C000C9BA08 /* keep_score_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keep_score_Watch_AppTests.swift; sourceTree = "<group>"; };
+		AFD25C762DFB27C000C9BA08 /* keep-score Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "keep-score Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD25C7A2DFB27C000C9BA08 /* keep_score_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keep_score_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		AFD25C7C2DFB27C000C9BA08 /* keep_score_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keep_score_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFD25C572DFB27BF00C9BA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD25C692DFB27C000C9BA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD25C732DFB27C000C9BA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFD25C4D2DFB27BF00C9BA08 = {
+			isa = PBXGroup;
+			children = (
+				AFD25C5E2DFB27BF00C9BA08 /* keep-score Watch App */,
+				AFD25C6F2DFB27C000C9BA08 /* keep-score Watch AppTests */,
+				AFD25C792DFB27C000C9BA08 /* keep-score Watch AppUITests */,
+				AFD25C552DFB27BF00C9BA08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFD25C552DFB27BF00C9BA08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFD25C542DFB27BF00C9BA08 /* keep-score.app */,
+				AFD25C5A2DFB27BF00C9BA08 /* keep-score Watch App.app */,
+				AFD25C6C2DFB27C000C9BA08 /* keep-score Watch AppTests.xctest */,
+				AFD25C762DFB27C000C9BA08 /* keep-score Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFD25C5E2DFB27BF00C9BA08 /* keep-score Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				AFD25C5F2DFB27BF00C9BA08 /* keep_scoreApp.swift */,
+				AFD25C612DFB27BF00C9BA08 /* ContentView.swift */,
+				AFD25C632DFB27C000C9BA08 /* Assets.xcassets */,
+				AFD25C652DFB27C000C9BA08 /* Preview Content */,
+			);
+			path = "keep-score Watch App";
+			sourceTree = "<group>";
+		};
+		AFD25C652DFB27C000C9BA08 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AFD25C662DFB27C000C9BA08 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFD25C6F2DFB27C000C9BA08 /* keep-score Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFD25C702DFB27C000C9BA08 /* keep_score_Watch_AppTests.swift */,
+			);
+			path = "keep-score Watch AppTests";
+			sourceTree = "<group>";
+		};
+		AFD25C792DFB27C000C9BA08 /* keep-score Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFD25C7A2DFB27C000C9BA08 /* keep_score_Watch_AppUITests.swift */,
+				AFD25C7C2DFB27C000C9BA08 /* keep_score_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "keep-score Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFD25C532DFB27BF00C9BA08 /* keep-score */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD25C842DFB27C000C9BA08 /* Build configuration list for PBXNativeTarget "keep-score" */;
+			buildPhases = (
+				AFD25C522DFB27BF00C9BA08 /* Resources */,
+				AFD25C832DFB27C000C9BA08 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFD25C5D2DFB27BF00C9BA08 /* PBXTargetDependency */,
+			);
+			name = "keep-score";
+			productName = "keep-score";
+			productReference = AFD25C542DFB27BF00C9BA08 /* keep-score.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		AFD25C592DFB27BF00C9BA08 /* keep-score Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD25C802DFB27C000C9BA08 /* Build configuration list for PBXNativeTarget "keep-score Watch App" */;
+			buildPhases = (
+				AFD25C562DFB27BF00C9BA08 /* Sources */,
+				AFD25C572DFB27BF00C9BA08 /* Frameworks */,
+				AFD25C582DFB27BF00C9BA08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "keep-score Watch App";
+			productName = "keep-score Watch App";
+			productReference = AFD25C5A2DFB27BF00C9BA08 /* keep-score Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFD25C6B2DFB27C000C9BA08 /* keep-score Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD25C872DFB27C000C9BA08 /* Build configuration list for PBXNativeTarget "keep-score Watch AppTests" */;
+			buildPhases = (
+				AFD25C682DFB27C000C9BA08 /* Sources */,
+				AFD25C692DFB27C000C9BA08 /* Frameworks */,
+				AFD25C6A2DFB27C000C9BA08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFD25C6E2DFB27C000C9BA08 /* PBXTargetDependency */,
+			);
+			name = "keep-score Watch AppTests";
+			productName = "keep-score Watch AppTests";
+			productReference = AFD25C6C2DFB27C000C9BA08 /* keep-score Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFD25C752DFB27C000C9BA08 /* keep-score Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD25C8A2DFB27C000C9BA08 /* Build configuration list for PBXNativeTarget "keep-score Watch AppUITests" */;
+			buildPhases = (
+				AFD25C722DFB27C000C9BA08 /* Sources */,
+				AFD25C732DFB27C000C9BA08 /* Frameworks */,
+				AFD25C742DFB27C000C9BA08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFD25C782DFB27C000C9BA08 /* PBXTargetDependency */,
+			);
+			name = "keep-score Watch AppUITests";
+			productName = "keep-score Watch AppUITests";
+			productReference = AFD25C762DFB27C000C9BA08 /* keep-score Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFD25C4E2DFB27BF00C9BA08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AFD25C532DFB27BF00C9BA08 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AFD25C592DFB27BF00C9BA08 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AFD25C6B2DFB27C000C9BA08 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AFD25C592DFB27BF00C9BA08;
+					};
+					AFD25C752DFB27C000C9BA08 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AFD25C592DFB27BF00C9BA08;
+					};
+				};
+			};
+			buildConfigurationList = AFD25C512DFB27BF00C9BA08 /* Build configuration list for PBXProject "keep-score" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFD25C4D2DFB27BF00C9BA08;
+			productRefGroup = AFD25C552DFB27BF00C9BA08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFD25C532DFB27BF00C9BA08 /* keep-score */,
+				AFD25C592DFB27BF00C9BA08 /* keep-score Watch App */,
+				AFD25C6B2DFB27C000C9BA08 /* keep-score Watch AppTests */,
+				AFD25C752DFB27C000C9BA08 /* keep-score Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFD25C522DFB27BF00C9BA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD25C582DFB27BF00C9BA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD25C672DFB27C000C9BA08 /* Preview Assets.xcassets in Resources */,
+				AFD25C642DFB27C000C9BA08 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD25C6A2DFB27C000C9BA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD25C742DFB27C000C9BA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFD25C562DFB27BF00C9BA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD25C622DFB27BF00C9BA08 /* ContentView.swift in Sources */,
+				AFD25C602DFB27BF00C9BA08 /* keep_scoreApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD25C682DFB27C000C9BA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD25C712DFB27C000C9BA08 /* keep_score_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFD25C722DFB27C000C9BA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD25C7D2DFB27C000C9BA08 /* keep_score_Watch_AppUITestsLaunchTests.swift in Sources */,
+				AFD25C7B2DFB27C000C9BA08 /* keep_score_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFD25C5D2DFB27BF00C9BA08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFD25C592DFB27BF00C9BA08 /* keep-score Watch App */;
+			targetProxy = AFD25C5C2DFB27BF00C9BA08 /* PBXContainerItemProxy */;
+		};
+		AFD25C6E2DFB27C000C9BA08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFD25C592DFB27BF00C9BA08 /* keep-score Watch App */;
+			targetProxy = AFD25C6D2DFB27C000C9BA08 /* PBXContainerItemProxy */;
+		};
+		AFD25C782DFB27C000C9BA08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFD25C592DFB27BF00C9BA08 /* keep-score Watch App */;
+			targetProxy = AFD25C772DFB27C000C9BA08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AFD25C7E2DFB27C000C9BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFD25C7F2DFB27C000C9BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AFD25C812DFB27C000C9BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"keep-score Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "keep-score";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.keep-score.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		AFD25C822DFB27C000C9BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"keep-score Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "keep-score";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.keep-score.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		AFD25C852DFB27C000C9BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "keep-score";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.keep-score";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFD25C862DFB27C000C9BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "keep-score";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.keep-score";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFD25C882DFB27C000C9BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.keep-score-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/keep-score Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/keep-score Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		AFD25C892DFB27C000C9BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.keep-score-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/keep-score Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/keep-score Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		AFD25C8B2DFB27C000C9BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.keep-score-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "keep-score Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		AFD25C8C2DFB27C000C9BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.keep-score-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "keep-score Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFD25C512DFB27BF00C9BA08 /* Build configuration list for PBXProject "keep-score" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD25C7E2DFB27C000C9BA08 /* Debug */,
+				AFD25C7F2DFB27C000C9BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD25C802DFB27C000C9BA08 /* Build configuration list for PBXNativeTarget "keep-score Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD25C812DFB27C000C9BA08 /* Debug */,
+				AFD25C822DFB27C000C9BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD25C842DFB27C000C9BA08 /* Build configuration list for PBXNativeTarget "keep-score" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD25C852DFB27C000C9BA08 /* Debug */,
+				AFD25C862DFB27C000C9BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD25C872DFB27C000C9BA08 /* Build configuration list for PBXNativeTarget "keep-score Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD25C882DFB27C000C9BA08 /* Debug */,
+				AFD25C892DFB27C000C9BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD25C8A2DFB27C000C9BA08 /* Build configuration list for PBXNativeTarget "keep-score Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD25C8B2DFB27C000C9BA08 /* Debug */,
+				AFD25C8C2DFB27C000C9BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFD25C4E2DFB27BF00C9BA08 /* Project object */;
+}

@@ -14,11 +14,11 @@ struct ContentView: View {
         VStack(spacing: 2) {
             Spacer(minLength: 20)
             HStack {
-                ScoreView(label: "You", score: $yourTeamScore) {
+                ScoreView(label: "Home", score: $yourTeamScore) {
                     lastScoredTeam = .your
                 }
                 Spacer()
-                ScoreView(label: "Them", score: $theirTeamScore) {
+                ScoreView(label: "Away", score: $theirTeamScore) {
                     lastScoredTeam = .their
                 }
             }

@@ -6,26 +6,22 @@ enum Team {
 }
 
 struct ContentView: View {
-    
     @AppStorage("yourTeamScore") private var yourTeamScore = 0
     @AppStorage("theirTeamScore") private var theirTeamScore = 0
     @State private var lastScoredTeam: Team? = nil
-    
+
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 2) {
+            Spacer(minLength: 20)
             HStack {
                 ScoreView(label: "You", score: $yourTeamScore) {
                     lastScoredTeam = .your
                 }
-
-                Spacer(minLength: 12)
-
+                Spacer()
                 ScoreView(label: "Them", score: $theirTeamScore) {
                     lastScoredTeam = .their
                 }
             }
-            .padding(.top, 4) // gentle space from system time
-            .padding(.bottom, 8) // reduce gap before Undo button
 
             Button("Undo last score") {
                 switch lastScoredTeam {
@@ -41,7 +37,6 @@ struct ContentView: View {
             }
             .buttonStyle(.bordered)
             .tint(.gray)
-            .padding(.bottom, 4)
 
             Button("Reset Scores") {
                 yourTeamScore = 0
@@ -50,27 +45,26 @@ struct ContentView: View {
                 WKInterfaceDevice.current().play(.failure)
             }
             .foregroundColor(.red)
-            .padding(.bottom, 4)
 
-            Spacer(minLength: 0) // leave minimal push for edge breathing
+            Spacer()
         }
-        .padding(.horizontal, 8)
-        .frame(maxHeight: .infinity, alignment: .top) // pin to top of screen
+        .padding()
     }
-
 }
 
 struct ScoreView: View {
     let label: String
     @Binding var score: Int
     let onScore: () -> Void
-    
+
     var body: some View {
-        VStack(spacing: 2) {
+        VStack(spacing: 0) {
             Text(label)
                 .font(.caption)
+                .padding(.bottom, 2)
             Text("\(score)")
                 .font(.title2)
+                .padding(.bottom, 4)
             Button(action: {
                 score += 1
                 onScore()

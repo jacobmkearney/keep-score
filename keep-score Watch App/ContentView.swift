@@ -1,60 +1,36 @@
 import SwiftUI
 import WatchKit
 
+enum Team {
+    case your, their
+}
+
 struct ContentView: View {
-    
     @AppStorage("yourTeamScore") private var yourTeamScore = 0
     @AppStorage("theirTeamScore") private var theirTeamScore = 0
-    @State private var lastScoredTeam: String? = nil
+    @State private var lastScoredTeam: Team? = nil
 
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 2) {
+            Spacer(minLength: 20)
             HStack {
-                VStack {
-                    Text("Your Team")
-                        .font(.caption2)
-                    Text("\(yourTeamScore)")
-                        .font(.title)
-                    Button(action: {
-                        yourTeamScore += 1
-                        lastScoredTeam = "your"
-                        WKInterfaceDevice.current().play(.click)
-                    }) {
-                        Image(systemName: "plus")
-                            .font(.title2)
-                            .foregroundColor(.white)
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                ScoreView(label: "You", score: $yourTeamScore) {
+                    lastScoredTeam = .your
                 }
-
                 Spacer()
-
-                VStack {
-                    Text("Their Team")
-                        .font(.caption2)
-                    Text("\(theirTeamScore)")
-                        .font(.title)
-                    Button(action: {
-                        theirTeamScore += 1
-                        lastScoredTeam = "their"
-                        WKInterfaceDevice.current().play(.click)
-                    }) {
-                        Image(systemName: "plus")
-                            .font(.title2)
-                            .foregroundColor(.white)
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.red)
+                ScoreView(label: "Them", score: $theirTeamScore) {
+                    lastScoredTeam = .their
                 }
             }
-            .padding(.horizontal)
 
-            Button("Undo") {
-                if lastScoredTeam == "your", yourTeamScore > 0 {
+            Button("Undo last score") {
+                switch lastScoredTeam {
+                case .your where yourTeamScore > 0:
                     yourTeamScore -= 1
-                } else if lastScoredTeam == "their", theirTeamScore > 0 {
+                case .their where theirTeamScore > 0:
                     theirTeamScore -= 1
+                default:
+                    break
                 }
                 lastScoredTeam = nil
                 WKInterfaceDevice.current().play(.start)
@@ -69,8 +45,38 @@ struct ContentView: View {
                 WKInterfaceDevice.current().play(.failure)
             }
             .foregroundColor(.red)
+
+            Spacer()
         }
         .padding()
+    }
+}
+
+struct ScoreView: View {
+    let label: String
+    @Binding var score: Int
+    let onScore: () -> Void
+
+    var body: some View {
+        VStack(spacing: 0) {
+            Text(label)
+                .font(.caption)
+                .padding(.bottom, 2)
+            Text("\(score)")
+                .font(.title2)
+                .padding(.bottom, 4)
+            Button(action: {
+                score += 1
+                onScore()
+                WKInterfaceDevice.current().play(.click)
+            }) {
+                Image(systemName: "plus")
+                    .font(.title3)
+                    .foregroundColor(.white)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.green)
+        }
     }
 }
 

@@ -12,7 +12,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 2) {
-            Spacer(minLength: 20)
+            Spacer(minLength: 25)
             HStack {
                 ScoreView(label: "Home", score: $yourTeamScore) {
                     lastScoredTeam = .your
